@@ -35,3 +35,6 @@ Feature: Template Feature
   #then ile yazilan steplere bir validation yani assertion yapildigini anlayabiliriz
   #
   #Then kullanici login hata mesajini gormelidir
+
+  #BDD : Behavioral Driven Development : Tester, Developer ve Client daha iyi iletisim kullanmak adina tercih edilir.
+  # ozellikle de kodlama bilgisi olmayan kisiler icin
