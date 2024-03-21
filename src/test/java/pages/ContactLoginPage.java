@@ -28,8 +28,17 @@ public class ContactLoginPage {
 
 
 
+
+
     public void loginEmail() {
         email.sendKeys(Faker.instance().internet().emailAddress());
+    }
+
+    @FindBy(id = "signup")
+    public WebElement signupButton;
+
+    public void signUpButton(){
+        signupButton.click();
     }
 
 }

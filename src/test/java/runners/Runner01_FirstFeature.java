@@ -7,9 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features", // buraya feature file'in CONTENT ROOT'u yazilir.
         // Gherkin dilinde yazilmis senaryolari aliriz.
-        glue = "stepdefinitions",//buraya stepdefinitions package'inin SOURCE ROOT'u yazilir.
+        glue = "stepdefinitions"//buraya stepdefinitions package'inin SOURCE ROOT'u yazilir.
         // Java kodlari olarak implement ettigimiz package
-        tags = "@background"
+//        tags = "@background"
         // Run etmek istedigimiz tagin adi
 //        dryRun = true
         // Testi test ediyor ve eksik step definition varsa onlari bize gosterir.
