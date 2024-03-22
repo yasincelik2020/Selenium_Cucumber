@@ -1,3 +1,4 @@
+@parallel
 Feature: User login HRM with dataTable
 
   @validCredentials

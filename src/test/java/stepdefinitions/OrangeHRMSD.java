@@ -36,8 +36,8 @@ public class OrangeHRMSD {
     }
 
     @And("scenario fail olur")
-    public void scenarioFailOlur() {
-
+    public void scenarioFailOlur() throws InterruptedException {
+        Thread.sleep(2000);
         Assert.assertFalse(op.text.getText().contains("Invalid credentials"));
     }
 

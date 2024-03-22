@@ -26,8 +26,8 @@ public class Hooks {
         if(scenario.isFailed()){
             System.out.println("scenario failed");
             takeScreenshot(scenario.getName());
-//            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-//            scenario.attach(screenshot, "image/png", "FailedScenarioScreenshot");
+            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "FailedScenarioScreenshot");
             System.out.println("Screenshot taken for failed scenario: " + scenario.getName());
         }
         // internet ortaminda raporlarinizi goruntulemek icin cucumber.properties dosyasi olustururz,
